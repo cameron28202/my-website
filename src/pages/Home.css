@@ -1,0 +1,142 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 150px);
+}
+
+.name-display {
+  text-align: center;
+}
+
+.name-display .first-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 10rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 1.75rem;
+  animation: fadeIn var(--fade-in-duration) ease-out forwards;
+  text-shadow: 0 0 15px rgba(26, 54, 93, 0.3);
+}
+
+.name-display .last-name {
+  font-size: 5rem;
+  color: var(--white-color);
+  font-weight: 300;
+  letter-spacing: 2px;
+  display: inline-block;
+  animation: fadeIn var(--fade-in-duration) ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.name-display .title {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-top: 1rem;
+  font-weight: 300;
+  min-height: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typing-text {
+  display: inline-block;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1.2em;
+  background-color: var(--third-color);
+  margin-left: 4px;
+  animation: blink 1s infinite;
+  box-shadow: 0 0 8px rgba(255, 107, 107, 0.5);
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Function Block Styles */
+.function-block {
+  position: relative;
+  padding: 0 0 0 20px;
+  border-left: 2px solid var(--accent-color);
+}
+
+.home-function {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.function-name {
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 1.6rem;
+  color: var(--accent-color);
+  margin: 0 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.function-content {
+  padding-left: 20px;
+}
+
+.function-end {
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 1.6rem;
+  color: var(--accent-color);
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+/* Gradient text effect for typing text */
+.typing-text {
+  background: linear-gradient(to right, var(--accent-color), var(--third-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .name-display .first-name {
+    font-size: 4rem;
+  }
+  
+  .name-display .last-name {
+    font-size: 2.5rem;
+  }
+  
+  .name-display .title {
+    font-size: 1.2rem;
+  }
+  
+  .function-block {
+    padding-left: 15px;
+  }
+  
+  .function-name {
+    font-size: 1.4rem;
+  }
+  
+  .function-content {
+    padding-left: 10px;
+  }
+  
+  .function-end {
+    font-size: 1.4rem;
+  }
+} 
