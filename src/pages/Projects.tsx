@@ -5,7 +5,6 @@ const Projects: React.FC = () => {
   return (
     <div className="projects fade-in">
       <div className="projects-container">
-        <h1>Projects</h1>
         
         <section className="projects-section function-block">
           <h2 className="function-name">featuredProjects {'{'}</h2>

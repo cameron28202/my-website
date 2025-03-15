@@ -5,7 +5,6 @@ const About: React.FC = () => {
   return (
     <div className="about fade-in">
       <div className="about-container">
-        <h1>About Me</h1>
         
         <section className="about-section function-block">
           <h2 className="function-name">about {'{'}</h2>
