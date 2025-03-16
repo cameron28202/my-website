@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
 .home {
   display: flex;
   flex-direction: column;
@@ -12,11 +14,11 @@
 }
 
 .name-display .first-name {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Reenie Beanie', cursive;
   font-size: 10rem;
   color: var(--accent-color);
   margin-bottom: 0.5rem;
-  font-weight: 700;
+  font-weight: 400;
   display: inline-block;
   margin-right: 1.75rem;
   animation: fadeIn var(--fade-in-duration) ease-out forwards;
@@ -24,9 +26,9 @@
 }
 
 .name-display .last-name {
-  font-size: 5rem;
+  font-size: 7rem;
   color: var(--white-color);
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 2px;
   display: inline-block;
   animation: fadeIn var(--fade-in-duration) ease-out 0.2s forwards;
@@ -38,7 +40,7 @@
   color: var(--text-color);
   margin-top: 1rem;
   font-weight: 300;
-  min-height: 1.5em;
+  min-height: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,20 +75,14 @@
   padding: 0 0 0 20px;
 }
 
-/* Remove border from function blocks */
-.no-border {
-  border-left: none !important;
-}
-
 .home-function {
   max-width: 800px;
   width: 100%;
-  height: 100vh;
+  min-height: 70vh;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem 1rem;
 }
 
 .function-name {
@@ -110,20 +106,11 @@
   padding-left: 0;
 }
 
-/* Gradient text effect for typing text */
-.typing-text {
-  background: linear-gradient(to right, var(--accent-color), var(--third-color));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-weight: 400;
-}
-
 /* Social Links Tray */
 .social-tray {
   max-width: 800px;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,7 +167,7 @@
 .nav-section {
   max-width: 800px;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -250,6 +237,45 @@
 .scroll-fade.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.scroll-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 2px solid var(--accent-color);
+  color: var(--text-color);
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.scroll-button i {
+  font-size: 1.2rem;
+  animation: bounce 2s infinite;
+}
+
+.scroll-button:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
 }
 
 @media (max-width: 768px) {

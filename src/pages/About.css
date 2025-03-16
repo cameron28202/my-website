@@ -277,7 +277,6 @@
   background-color: rgba(255, 255, 255, 0.03);
   border-radius: 8px;
   padding: 20px;
-  border-left: 3px solid var(--third-color);
 }
 
 .skill-tag {
@@ -347,13 +346,12 @@
   position: relative;
   margin-bottom: 60px;
   padding: 0 0 0 20px;
-  border-left: 2px solid var(--accent-color);
 }
 
 .function-name {
   font-family: 'Consolas', 'Monaco', monospace;
   font-size: 1.6rem;
-  color: var(--accent-color);
+  color: var(--text-color);
   margin: 0 0 20px;
   display: flex;
   align-items: center;
