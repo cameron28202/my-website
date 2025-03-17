@@ -61,7 +61,7 @@ const Home: React.FC = () => {
             <i className="fab fa-linkedin"></i>
             <span>LinkedIn</span>
           </a>
-          <a href="mailto:cameron28202@gmail.com" className="social-link">
+          <a href="mailto:cameron28202@gmail.com" className="contact-link">
             <i className="fas fa-envelope"></i>
             <span>Email</span>
           </a>
