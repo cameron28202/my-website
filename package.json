@@ -12,7 +12,6 @@
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@types/react-router-dom": "^5.3.3",
-    "gh-pages": "^6.3.0",
     "my_website": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -47,5 +46,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://cameron28202.github.io/my_website/"
+  "homepage": "https://cameron28202.github.io/my_website",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }

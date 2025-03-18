@@ -207,38 +207,43 @@
   font-size: 1.2rem;
 }
 
-@media (max-width: 992px) {
-  .project-item {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
+/* Responsive styles for smaller screens */
+@media (max-width: 1000px) {
   .projects-container {
     padding: 0 20px;
   }
   
-  .projects h1 {
-    font-size: 2.2rem;
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   
-  .function-block {
-    padding-left: 15px;
+  .project-item {
+    flex: 0 0 auto;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 24px;
   }
   
-  .function-name {
+  /* Hide scroll controls when in vertical layout */
+  .scroll-controls {
+    display: none;
+  }
+  
+  .function-name, .function-end {
     font-size: 1.4rem;
   }
   
   .function-content {
-    padding-left: 10px;
+    padding-left: 15px;
   }
-  
-  .function-end {
-    font-size: 1.4rem;
-  }
-  
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
   .project-header {
     flex-direction: column;
     align-items: flex-start;
@@ -249,9 +254,11 @@
   }
   
   .project-item {
-    flex: 0 0 280px;
-    min-width: 280px;
-    max-width: 280px;
+    padding: 16px;
+  }
+  
+  .projects-section {
+    margin-bottom: 40px;
   }
 }
 
@@ -337,50 +344,9 @@
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .interests-container {
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding: 0 20px;
   }
   
-  .interest-item {
-    flex: 0 0 calc(50% - 12px);
-  }
-}
-
-@media (min-width: 1200px) {
-  .interest-item {
-    flex: 0 0 calc(33.333% - 16px);
-  }
-}
-
-/* New media query for very small devices */
-@media (max-width: 480px) {
-  .projects h1 {
-    font-size: 1.8rem;
-  }
-  
-  .projects-section h2 {
-    font-size: 1.5rem;
-  }
-  
-  .projects-grid {
-    flex-direction: column;
-    overflow-x: visible;
-  }
-  
-  .project-item {
-    flex: 1;
-    min-width: 100%;
-    max-width: 100%;
-    margin-bottom: 16px;
-  }
-  
-  .scroll-controls {
-    display: none;
-  }
-  
-  .interest-item {
-    flex: 0 0 100%;
-  }
 }

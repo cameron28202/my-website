@@ -52,20 +52,20 @@ const Home: React.FC = () => {
       {/* Social Links Tray */}
       <div ref={socialTrayRef} className="social-tray function-block scroll-fade">
         <div className="function-name">connect {'{'}</div>
-        <div className="social-links">
-          <a href="https://github.com/cameron28202" target="_blank" rel="noopener noreferrer" className="social-link">
-            <i className="fab fa-github"></i>
-            <span>GitHub</span>
-          </a>
-          <a href="https://linkedin.com/in/cameronwstone" target="_blank" rel="noopener noreferrer" className="social-link">
-            <i className="fab fa-linkedin"></i>
-            <span>LinkedIn</span>
-          </a>
-          <a href="mailto:cameron28202@gmail.com" className="contact-link">
-            <i className="fas fa-envelope"></i>
-            <span>Email</span>
-          </a>
-        </div>
+        <div className="contact-links">
+              <a href="https://github.com/cameron28202" target="_blank" rel="noopener noreferrer" className="contact-link">
+                <i className="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/cameronwstone" target="_blank" rel="noopener noreferrer" className="contact-link">
+                <i className="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:cameron28202@gmail.com" className="contact-link">
+                <i className="fas fa-envelope"></i>
+                <span>Email</span>
+              </a>
+            </div>
         <div className="function-end">{'}'}</div>
       </div>
       

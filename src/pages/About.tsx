@@ -59,7 +59,7 @@ const About: React.FC = () => {
                     <h3>Machine Learning Research Intern</h3>
                   </div>
                   <p className="timeline-location">University of Technology of Compiègne, Heudiasyc Laboratory, France</p>
-                  <p className="timeline-description">Developed and optimized quantified neural networks for robotic applications, reducing model size by 75% while maintaining accuracy.</p>
+                  <p className="timeline-description"></p>
                 </div>
               </div>
             </div>
