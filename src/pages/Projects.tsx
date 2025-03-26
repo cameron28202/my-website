@@ -10,11 +10,11 @@ const Projects: React.FC = () => {
       description: 'Project Manager for AggieStudy, a full-stack web application aimed at creating a one-stop website for Texas A&M students to study for their exams.',
       technologies: ['React.js', 'Spring Boot', 'PostgreSQL', 'Vercel', 'Axios', 'Git', 'JavaScript', 'Java'],
       image: '/images/aggiestudy.png',
-      links: [{'name': 'Live Website', 'link': 'https://aggiestudy.com'}, {'name': 'GitHub', 'link': 'https://github.com/'}],
+      links: [{'name': 'Live Website', 'link': 'https://aggiestudy.com'}, {'name': 'GitHub', 'link': 'https://github.com/aggie-coding-club/AggieStudy'}],
     },
     {
       title: 'Tidal Hackathon',
-      description: 'Participated in the Tidal Hackathon, a two-day hackathon sponsored by Nvidia, AWS and Phillips 66 at Texas A&M. Experimented with a machine learning model for a dynamic speed limit sign.',
+      description: 'Participated in the Tidal Hackathon 2024, a two-day hackathon sponsored by Nvidia, AWS and Phillips 66 at Texas A&M. Experimented with a machine learning model for a dynamic speed limit sign.',
       technologies: ['Python', 'Pandas', 'Sklearn'],
       image: '/images/tidal.jpg',
       links: []
@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
       description: 'As a junior at Texas A&M University, Iv taken the following: Data Structures and Algorithms, Object Oriented Programming, Discrete Mathematics, Digital System Design, Electrical Circuit Theory, Linear Algebra, Differential Equations, Computer Architecture and Design, Operating Systems and Network Programming',
       technologies: ['C/C++', 'Java', 'JavaScript', 'ARMv8', 'Verilog'], 
       image: '/images/datastructure.png',
-      links: []
+      links: [{'name': 'GitHub', 'link': 'https://github.com/cameron28202/'}]
     }
     
   ];
